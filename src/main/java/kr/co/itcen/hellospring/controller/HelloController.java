@@ -20,7 +20,7 @@ public class HelloController {
 
 	@RequestMapping("/hello")
 	public String hello() {
-		return "/WEB-INF/views/hello.jsp";
+		return "hello";
 	}
 	
 	@RequestMapping("/hello2")
@@ -29,7 +29,7 @@ public class HelloController {
 		
 		ModelAndView mav = new ModelAndView();
 		mav.addObject("data", data);
-		mav.setViewName("/WEB-INF/views/hello.jsp");
+		mav.setViewName("hello");
 		
 		return mav;
 	}
@@ -38,7 +38,7 @@ public class HelloController {
 	public String hello3(Model model) {
 		String data = "Hello World3";
 		model.addAttribute("data", data);
-		return "/WEB-INF/views/hello.jsp";
+		return "hello";
 	}
 	
 	@RequestMapping("/hello4")
@@ -50,7 +50,7 @@ public class HelloController {
 		model.addAttribute("email", email);
 		model.addAttribute("age", age);
 		
-		return "/WEB-INF/views/hello.jsp";
+		return "hello";
 	}
 
 	@RequestMapping("/hello5")
@@ -63,7 +63,7 @@ public class HelloController {
 		model.addAttribute("email", user.getEmail());
 		model.addAttribute("age", user.getAge());
 		
-		return "/WEB-INF/views/hello.jsp";
+		return "hello";
 	}
 	
 	/*

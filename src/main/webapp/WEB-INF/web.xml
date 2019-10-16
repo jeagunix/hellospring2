@@ -7,13 +7,15 @@
 
 	<servlet>
 		<servlet-name>spring</servlet-name>
-		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet
+		</servlet-class>
 		<init-param>
 			<param-name>contextClass</param-name>
-			<param-value>org.springframework.web.context.support.AnnotationConfigWebApplicationContext</param-value>
+			<param-value>org.springframework.web.context.support.AnnotationConfigWebApplicationContext
+			</param-value>
 		</init-param>
 		<init-param>
-			<param-name>contextConfigurationLocation</param-name>
+			<param-name>contextConfigLocation</param-name>
 			<param-value>kr.co.itcen.hellospring.config.WebConfig</param-value>
 		</init-param>
 	</servlet>
